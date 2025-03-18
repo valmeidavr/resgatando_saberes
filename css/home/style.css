@@ -1,0 +1,43 @@
+/* Resetar configuração do navegador */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+
+/* Estilização do body */
+body {
+    background-color: #493AA3;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* esquerda direita */
+    align-items: center;     /* cima baixo */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    max-height: 600px;
+}
+
+.rs {
+    width: 340px;
+}
+
+.logotipo  {
+    margin-top: 20px;
+    width: 340px;
+} 
+
+.icon-white {
+    color: white;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.icon-white:hover {
+    color: #FFD700;
+}
