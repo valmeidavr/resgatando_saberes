@@ -9,6 +9,11 @@
     font-family: "Inter", sans-serif;
 }
 
+body {
+    background-color: #493AA3;
+    height: 100vh;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -17,13 +22,110 @@
     height: 100vh;
 }
 
+
+.container img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
 .container h1 {
     font-size: 36px;
     font-weight: normal;
+    color: white;
 }
 
 .container h4 {
-    margin-top: 10px;
+    margin: 10px 0 30px 0;
     font-size: 24px;
     font-weight: lighter;
+    color: white;
+   
+
+}
+.form-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: black;
+}
+
+.form-group input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    background-color: #F6ED34;
+    border: solid 1px #493AA3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form {
+    background-color: white;
+    border: solid 1px #F6ED34;  
+    padding: 40px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+/* Estilização dos ícones dentro dos inputs */
+.input-container {
+    position: relative;
+    width: 300px;
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.input-container input {
+    width: 100%;
+    height: 40px;
+    padding: 10px 10px 10px 35px; /* Adiciona espaço para o ícone */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-container input:focus {
+    border-color: #493AA3;
+    outline: none;
+}
+
+.form-group a {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.form-group a:hover {
+    text-decoration: underline;
+}
+
+.form-group a:active {
+    color: #493AA3;
+}
+
+.form-group a:visited {
+    color: #493AA3;
 }

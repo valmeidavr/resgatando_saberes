@@ -12,8 +12,8 @@
 <body>
     <div class="container">
         <!--  <img class="logotipo" src="./img/logotipo.png"/> -->
-        <h1>Login</h1>
-        <h4>Bem vindo de volta! 🚀</h4>
+        <h1>Crie sua Conta</h1>
+        <h4>Cadastre-se e comece agora! 🚀</h4>
 
         <form action="./autenticar.php" method="POST">
             <div class="form-group">
@@ -32,8 +32,15 @@
                 </div>
             </div>
             <div class="form-group">
-                <button type="submit">Entrar</button>
-                <a href="./cadastro.php">Não tem uma conta? Cadastre-se</a>
+                <label for="senha">Confirmar Senha</label>
+                <div class="input-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit">Cadastrar</button>
+                <a href="./login.php">Voltar para o login</a>
             </div>
            
         </form>
