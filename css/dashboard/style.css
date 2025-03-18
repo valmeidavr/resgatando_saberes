@@ -1,0 +1,163 @@
+/* Resetar configuração do navegador */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+    font-family: "Inter", sans-serif;
+}
+
+/* Estilização do body */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center;     /* Alinhamento vertical */
+    background-color: #f4f4f4;
+}
+
+/* Centraliza o conteúdo */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização do Header */
+.header {
+    height: 100px;
+    background-color: #493AA3;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+/* Estilização do Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #493AA3;
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+
+/* Estilização do botão */
+button {
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    background-color: #F6ED34;
+    border: solid 1px #493AA3;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #493AA3;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilização do título */
+.container h1 {
+    font-size: 36px;
+    font-weight: normal;
+    color: black;
+}
+
+.container h4 {
+    margin: 10px 0 30px 0;
+    font-size: 24px;
+    font-weight: lighter;
+    color: black;
+}
+
+/* 🔥 Ajustes no Calendário Zabuto */
+/* Definir um tamanho maior para o calendário */
+#demo-calendar-basic {
+    width: 600px;
+    max-width: 600px; /* Aumenta a largura do calendário */
+    font-size: 18px; /* Aumenta o tamanho do texto */
+    margin: auto;
+}
+
+/* Ajustar a tabela do calendário */
+.zabuto-calendar {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 20px;
+}
+
+/* Ajustar a altura das células dos dias para aumentar o espaçamento */
+.zabuto-calendar tbody td {
+    width: 40px; /* Aumenta a largura das células */
+    height: 40px; /* Aumenta a altura */
+    font-size: 15px; /* Aumenta o tamanho do número */
+    text-align: center;
+    vertical-align: middle;
+    transition: 0.3s;
+    padding: 10px; /* Adiciona mais espaçamento interno */
+}
+
+/* Aumenta o espaço entre as células */
+.zabuto-calendar tbody td:not(:last-child) {
+    border-right: 2px solid #f3f3f3; /* Linha sutil entre os dias */
+}
+
+.zabuto-calendar tbody tr:not(:last-child) td {
+    border-bottom: 2px solid #f3f3f3; /* Linha entre as semanas */
+}
+
+/* Ajusta os dias da semana */
+.zabuto-calendar thead th {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px; /* Aumenta o espaçamento */
+    background-color: #F6ED34;
+    color: #493AA3;
+    border-radius: 4px;
+}
+
+/* Destaca o dia atual */
+.zabuto-calendar tbody td.today {
+    background-color: #F6ED34;
+    color: #493AA3;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+/* Adiciona espaçamento e um efeito hover */
+.zabuto-calendar tbody td:hover {
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.container a {
+    margin-top: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .zabuto-calendar tbody td {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .zabuto-calendar thead th {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
