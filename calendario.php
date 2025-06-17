@@ -43,5 +43,7 @@
         });
     });
 </script>
-
+ <?php 
+      include('vlibras.php');
+    ?>
 </html>

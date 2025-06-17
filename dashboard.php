@@ -56,5 +56,8 @@ $iniciais = strtoupper(substr($nome_usuario, 0, 1)); // Pega a inicial do nome
 
     <div class="footer"></div>
 </body>
+ <?php 
+      include('vlibras.php');
+    ?>
 
 </html>

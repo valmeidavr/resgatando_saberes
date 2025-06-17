@@ -28,6 +28,32 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.paragrafo-container {
+  max-width: 600px;
+  text-align: center;
+  font-size: 17px !important;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.img-container {
+    display: flex;
+}
+
+.titulo-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.audio-control{
+    display: flex;
+    cursor: pointer;
+}
+
 /* Estilização do Header */
 .header {
     height: 100px;
@@ -39,6 +65,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+}
+.form-group a {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .header h4 {
@@ -84,7 +116,6 @@ button:hover {
 }
 
 .container h4 {
-    margin: 10px 0 30px 0;
     font-size: 22px;
     font-weight: lighter;
     color: black;

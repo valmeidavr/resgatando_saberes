@@ -155,5 +155,8 @@ $email_usuario = $usuario['email'];
         </form>
     </div>
 </body>
+ <?php 
+      include('vlibras.php');
+    ?>
 
 </html>
