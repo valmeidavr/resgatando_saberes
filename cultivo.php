@@ -43,7 +43,7 @@ $iniciais = strtoupper(substr($nome_usuario, 0, 1)); // Pega a inicial do nome
 
     <div class="container">
         <div class="titulo-container">
-            <h4>Agricultura</h4>
+            <h4>Cultivo Suspenso</h4>
             <!-- Botão para o controle de áudio e alternância de play/stop -->
             <div class="audio-control">
                 <audio id="audio">
@@ -55,23 +55,12 @@ $iniciais = strtoupper(substr($nome_usuario, 0, 1)); // Pega a inicial do nome
                 <i class="fas fa-play" id="play-icon"></i> <!-- Ícone de Play -->
             </div>
         </div>
-        <p class="paragrafo-container">&nbsp;Descubra neste aplicativo tudo sobre
-            agricultura e cultivo! Encontre várias
-            informações essenciais sobre recipientes adequados, cultivo suspenso, solo e drenagem, irrigação e muito mais.</p>
+        <p class="paragrafo-container">&nbsp; Cultivar hortaliças e legumes de forma suspensa pode ser uma ótima maneira de otimizar o espaço e criar um jardim produtivo em áreas pequenas. Nem todas as plantas são adequadas para o cultivo suspenso. Algumas boas opções incluem:
+Tomates cereja,Morangos,Pepinos alfaces e outras folhas verdes,  Pimentões, Ervas como manjericão hortelã e salsa.</p>
 
-        <!-- Botões de navegação -->
-        <a href="./recipientes.php">
-            <button>Recipientes Adequados</button>
-        </a>
-        <a href="./cultivo.php">
-            <button>Cultivo Suspenso</button>
-        </a>
-        <a href="./solo.php">
-            <button>Solo e Drenagem</button>
-        </a>
-        <a href="./irrigacao.php">
-            <button>Irrigação e exposição</button>
-        </a>
+        <img src="./img/cultivo.png" alt="Solo" class="img-container">
+
+
 
         <!-- Botão para voltar ao Dashboard -->
         <div class="form-group" style="margin-top: 20px">
@@ -79,13 +68,29 @@ $iniciais = strtoupper(substr($nome_usuario, 0, 1)); // Pega a inicial do nome
         </div>
     </div>
 
-    <div class="footer">
-        <p>&copy; <?php echo date("Y"); ?> Resgatando Saberes. Todos os direitos reservados.</p>
-    </div>
+    <div class="footer"></div>
 
-    <?php
-    include('vlibras.php');
-    ?>
+    <script>
+        // Lógica para alternar play/stop
+        const playIcon = document.getElementById('play-icon');
+        const audio = document.getElementById('audio');
+
+        playIcon.addEventListener('click', function() {
+            if (audio.paused) {
+                audio.play(); // Iniciar áudio
+                playIcon.classList.remove('fa-play');
+                playIcon.classList.add('fa-stop'); // Mudar ícone para "stop"
+            } else {
+                audio.currentTime = 0; // Reinicia o áudio
+                audio.play(); // Recomeça o áudio
+                playIcon.classList.remove('fa-play');
+                playIcon.classList.add('fa-stop'); // Mudar ícone para "stop"
+            }
+        });
+    </script>
 </body>
+ <?php 
+      include('vlibras.php');
+    ?>
 
 </html>

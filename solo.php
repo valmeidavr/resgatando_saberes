@@ -55,8 +55,8 @@ $iniciais = strtoupper(substr($nome_usuario, 0, 1)); // Pega a inicial do nome
                 <i class="fas fa-play" id="play-icon"></i> <!-- Ícone de Play -->
             </div>
         </div>
-        <p class="paragrafo-container">O solo é vital para o crescimento das
-            plantas e o armazenamento de nutrientes. A drenagem adequada evita o encharcamento, melhora a produtividade agrícola e previne erosões.<br>
+        <p class="paragrafo-container">&nbsp; O solo é vital para o crescimento das
+            plantas e o armazenamento de nutrientes. A drenagem adequada evita o encharcamento, melhora a produtividade agrícola e previne erosões.
             Então utilize um solo de boa qualidade e bem drenado. Adicione materiais como perlita ou vermículita para melhorar a drenagem e aeração.</p>
 
         <img src="./img/solo.png" alt="Solo" class="img-container">

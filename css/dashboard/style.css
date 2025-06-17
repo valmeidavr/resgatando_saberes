@@ -30,7 +30,7 @@ body {
 
 .paragrafo-container {
   max-width: 600px;
-  text-align: center;
+  text-align: justify;
   font-size: 17px !important;
   font-weight: lighter;
   margin-bottom: 20px;

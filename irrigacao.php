@@ -43,35 +43,21 @@ $iniciais = strtoupper(substr($nome_usuario, 0, 1)); // Pega a inicial do nome
 
     <div class="container">
         <div class="titulo-container">
-            <h4>Agricultura</h4>
+            <h4>Irrigação/Exposição</h4>
             <!-- Botão para o controle de áudio e alternância de play/stop -->
             <div class="audio-control">
                 <audio id="audio">
-                    <source src="path_to_your_audio.mp3" type="audio/mp3"> <!-- MP3 -->
-                    <source src="path_to_your_audio.ogg" type="audio/ogg"> <!-- OGG -->
-                    <source src="path_to_your_audio.wav" type="audio/wav"> <!-- WAV -->
+                    <source src="./mp3/irrigacao.mp3" type="audio/mp3"> <!-- MP3 -->
                     Seu navegador não suporta o elemento de áudio.
                 </audio>
                 <i class="fas fa-play" id="play-icon"></i> <!-- Ícone de Play -->
             </div>
         </div>
-        <p class="paragrafo-container">&nbsp;Descubra neste aplicativo tudo sobre
-            agricultura e cultivo! Encontre várias
-            informações essenciais sobre recipientes adequados, cultivo suspenso, solo e drenagem, irrigação e muito mais.</p>
+        <p class="paragrafo-container">&nbsp; A rega regular é crucial, pois os recipientes suspensos podem secar mais rapidamente. Considere um sistema de irrigação por gotejamento ou verifique a umidade do solo diariamente. A exposição das plantas refere-se à quantidade de luz solar. A luz solar é fundamental para o desenvolvimento das plantas através da fotossíntese, a exposição necessária varia de planta para planta.</p>
 
-        <!-- Botões de navegação -->
-        <a href="./recipientes.php">
-            <button>Recipientes Adequados</button>
-        </a>
-        <a href="./cultivo.php">
-            <button>Cultivo Suspenso</button>
-        </a>
-        <a href="./solo.php">
-            <button>Solo e Drenagem</button>
-        </a>
-        <a href="./irrigacao.php">
-            <button>Irrigação e exposição</button>
-        </a>
+        <img  style="border-radius: 30px;" src="./img/irrigacao.png" alt="Solo" class="img-container">
+
+
 
         <!-- Botão para voltar ao Dashboard -->
         <div class="form-group" style="margin-top: 20px">
@@ -79,13 +65,29 @@ $iniciais = strtoupper(substr($nome_usuario, 0, 1)); // Pega a inicial do nome
         </div>
     </div>
 
-    <div class="footer">
-        <p>&copy; <?php echo date("Y"); ?> Resgatando Saberes. Todos os direitos reservados.</p>
-    </div>
+    <div class="footer"></div>
 
-    <?php
-    include('vlibras.php');
-    ?>
+    <script>
+        // Lógica para alternar play/stop
+        const playIcon = document.getElementById('play-icon');
+        const audio = document.getElementById('audio');
+
+        playIcon.addEventListener('click', function() {
+            if (audio.paused) {
+                audio.play(); // Iniciar áudio
+                playIcon.classList.remove('fa-play');
+                playIcon.classList.add('fa-stop'); // Mudar ícone para "stop"
+            } else {
+                audio.currentTime = 0; // Reinicia o áudio
+                audio.play(); // Recomeça o áudio
+                playIcon.classList.remove('fa-play');
+                playIcon.classList.add('fa-stop'); // Mudar ícone para "stop"
+            }
+        });
+    </script>
 </body>
+ <?php 
+      include('vlibras.php');
+    ?>
 
 </html>
