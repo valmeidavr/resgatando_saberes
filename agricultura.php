@@ -55,7 +55,7 @@ $iniciais = strtoupper(substr($nome_usuario, 0, 1)); // Pega a inicial do nome
                 <i class="fas fa-play" id="play-icon"></i> <!-- Ícone de Play -->
             </div>
         </div>
-         <p class="paragrafo-container">Descubra neste aplicativo tudo sobre
+        <p class="paragrafo-container">Descubra neste aplicativo tudo sobre
             agricultura e cultivo! Encontre várias
             informações essenciais sobre recipientes adequados, cultivo suspenso, solo e drenagem, irrigação e muito mais.</p>
 
@@ -80,10 +80,11 @@ $iniciais = strtoupper(substr($nome_usuario, 0, 1)); // Pega a inicial do nome
     </div>
 
     <div class="footer">
-        <p>Copy</p>
+        <p>&copy; <?php echo date("Y"); ?> Resgatando Saberes. Todos os direitos reservados.</p>
     </div>
-    <?php 
-      include('vlibras.php');
+
+    <?php
+    include('vlibras.php');
     ?>
 </body>
 

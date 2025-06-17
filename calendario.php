@@ -26,7 +26,9 @@
         <div id="demo-calendar-basic"></div>
         <a href="./dashboard.php">Voltar</a>
     </div>
-    <div class='footer'></div>
+    <div class="footer">
+        <p>&copy; <?php echo date("Y"); ?> Resgatando Saberes. Todos os direitos reservados.</p>
+    </div>
 </body>
 <script>
     $(document).ready(function() {
