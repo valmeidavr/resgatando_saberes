@@ -86,6 +86,24 @@ $iniciais = strtoupper(substr($nome_usuario, 0, 1)); // Pega a inicial do nome
     <?php
     include('vlibras.php');
     ?>
+     <script>
+        // Lógica para alternar play/stop
+        const playIcon = document.getElementById('play-icon');
+        const audio = document.getElementById('audio');
+
+        playIcon.addEventListener('click', function() {
+            if (audio.paused) {
+                audio.play(); // Iniciar áudio
+                playIcon.classList.remove('fa-play');
+                playIcon.classList.add('fa-stop'); // Mudar ícone para "stop"
+            } else {
+                audio.currentTime = 0; // Reinicia o áudio
+                audio.play(); // Recomeça o áudio
+                playIcon.classList.remove('fa-play');
+                playIcon.classList.add('fa-stop'); // Mudar ícone para "stop"
+            }
+        });
+    </script>
 </body>
 
 </html>

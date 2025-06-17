@@ -61,7 +61,7 @@ $iniciais = strtoupper(substr($nome_usuario, 0, 1)); // Pega a inicial do nome
 
         <!-- Botão para voltar ao Dashboard -->
         <div class="form-group" style="margin-top: 20px">
-            <a href="dashboard.php">Voltar para o dashboard</a>
+           <a href="agricultura.php">Voltar menu anterior</a>
         </div>
     </div>
 

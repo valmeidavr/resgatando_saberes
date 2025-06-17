@@ -64,7 +64,7 @@ Tomates cereja,Morangos,Pepinos alfaces e outras folhas verdes,  Pimentões, E
 
         <!-- Botão para voltar ao Dashboard -->
         <div class="form-group" style="margin-top: 20px">
-            <a href="dashboard.php">Voltar para o dashboard</a>
+           <a href="agricultura.php">Voltar menu anterior</a>
         </div>
     </div>
 
